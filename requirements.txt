@@ -1,0 +1,5 @@
+pydantic>=1.10.0
+pydantic_ai>=0.0.43
+requests>=2.25.0  # If HTTP requests are used by OpenAIProvider
+python-dotenv>=0.21.0  # For managing environment variables (optional)
+streamlit>=1.0.0 # For creating a web app (optional)
