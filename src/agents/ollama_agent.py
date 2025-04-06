@@ -8,6 +8,8 @@ import streamlit as st
 
 
 class OllamaAgent:
+    # Check https://github.com/jageenshukla/hello-world-mcp-server for more details
+    # on how to create typescript MCP server
     mcp_server = MCPServerHTTP(url='http://localhost:4000/sse') 
     def __init__(self, model_name: str, base_url: str):
         self.model = OpenAIModel(model_name=model_name, provider=OpenAIProvider(base_url=base_url))
