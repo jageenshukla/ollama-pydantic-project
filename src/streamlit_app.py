@@ -1,12 +1,13 @@
 import streamlit as st
-from agents.ollama_agent import WeatherAgent
+from agents.ollama_agent import OllamaAgent
 from pydantic import BaseModel
+import asyncio 
 
 class FreeFormResponse(BaseModel):
     content: str
 
 # Initialize the Ollama agent
-agent = WeatherAgent(
+agent = OllamaAgent(
     model_name="llama3.2:3b-instruct-fp16",
     base_url="http://localhost:11434/v1",
 )
@@ -33,7 +34,7 @@ if user_query := st.chat_input("Type your message here..."):
     with st.spinner("Agent is thinking..."):
         try:
             # Run the agent and get the result
-            result = agent.run(user_query)
+            result = asyncio.run(agent.run(user_query))
             
             # Extract the 'content' field from the JSON response
             response_content = result.data  # Assuming result.data is parsed into FreeFormResponse
