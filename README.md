@@ -106,7 +106,7 @@ ollama-pydantic-project/
 
 - If you encounter issues with the Ollama server, ensure it is running on `http://localhost:11434/v1`.
 - If dependencies fail to install, ensure you are using Python 3.8 or higher and that your virtual environment is activated.
-- For MCP server-related issues, refer to the [MCP Server Documentation](https://github.com/jageenshukla/hello-world-mcp-server).
+- For MCP server-related issues, refer to the [MCP Server Sample](https://github.com/jageenshukla/hello-world-mcp-server).
 
 ## License
 
