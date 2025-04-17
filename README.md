@@ -1,6 +1,8 @@
 # Ollama Pydantic Project
 
-This project demonstrates how to use a local Ollama model with the Pydantic agent framework to create an intelligent agent. The agent is connected to an MCP server to utilize tools and provides a user-friendly interface using Streamlit.
+Welcome to the **Ollama Pydantic Project**! This project demonstrates how to use a local Ollama model with the Pydantic agent framework to create an intelligent agent. The agent is connected to an MCP server to utilize tools and provides a user-friendly interface using Streamlit.
+
+This project is part of the blog post: [Building a TypeScript MCP Server: A Guide for Integrating Existing Services](https://medium.com/@jageenshukla/building-a-typescript-mcp-server-a-guide-for-integrating-existing-services-5bde3fc13b23). Visit the blog to learn more about the concepts and implementation details behind this project.
 
 ## Overview
 
@@ -102,6 +104,10 @@ ollama-pydantic-project/
 - **MCP Server Tools**: Connects to an MCP server to enhance agent capabilities.
 - **Pydantic Framework**: Ensures data validation and type safety.
 
+## Related Projects
+
+This project is closely related to another GitHub project that demonstrates how to set up an MCP server: [Hello World MCP Server](https://github.com/jageenshukla/hello-world-mcp-server). The blog post associated with that project, [Building a TypeScript MCP Server: A Guide for Integrating Existing Services](https://medium.com/@jageenshukla/building-a-typescript-mcp-server-a-guide-for-integrating-existing-services-5bde3fc13b23), provides additional context and implementation details that complement this project.
+
 ## Troubleshooting
 
 - If you encounter issues with the Ollama server, ensure it is running on `http://localhost:11434/v1`.
@@ -110,7 +116,7 @@ ollama-pydantic-project/
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the terms of the license. See the LICENSE file for more details.
 
 ## Contributing
 
